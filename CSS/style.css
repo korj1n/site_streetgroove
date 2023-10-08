@@ -1,0 +1,877 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* Выберите нужную высоту шапки */
+  background-color: #fff;
+  z-index: 999;
+}
+
+.container1 {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px; /* Добавьте нужные отступы по бокам */
+}
+
+main {
+  margin-top: 80px; /* Установите такой же отступ сверху, как высота шапки */
+  padding: 20px; /* Добавьте нужные отступы по бокам */
+}
+
+.logo img {
+  height: 0px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  font-family: "Gothic", sans-serif;
+  margin-right: 100px;
+}
+
+nav a {
+  font-family: "Gothic", sans-serif;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+}
+
+nav a.active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+nav a:hover::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+}
+
+.city {
+  margin-right: 50px;
+}
+
+.login-btn {
+  font-family: "Gothic", sans-serif;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 600px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: #fff;
+}
+
+.text-container h1 {
+  font-family: "Gothic", sans-serif;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.text-container p {
+  font-family: "Gothic", sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 18px;
+  border-radius: 50px;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.product {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+  padding: 10px;
+  transition: transform 0.2s ease-out;
+  text-align: center;
+}
+
+.product.hovered {
+  transform: scale(1.05);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product p {
+  font-size: 14px; /* изменяем размер шрифта цены */
+  font-family: Arial, sans-serif; /* изменяем тип шрифта цены */
+}
+
+.button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 12px;
+  background: #000000;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 28px;
+  transition: 0.3s ease-in;
+  font-family: Arial, sans-serif;
+}
+
+.button:hover {
+  background: #ffffff;
+  color: #000000;
+  outline: 1px solid rgb(0, 0, 0);
+}
+.button:focus {
+  outline: none;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.buttoninput {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 12px;
+  background: #000000;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 28px;
+  transition: 0.3s ease-in;
+  font-family: Arial, sans-serif;
+}
+
+.buttoninput:hover {
+  background: #ffffff;
+  color: #000000;
+  outline: 0.5px solid rgb(0, 0, 0);
+}
+
+
+.input {
+  box-sizing: border-box;
+  position: center;
+  width: 569px;
+  height: 69px;
+  left: 685px;
+  top: 438px;
+  background: #FFFFFF;
+}
+
+.rectaling {
+  position: center;
+  width: 580px;
+  height: 604px;
+  background: #FFFFFF;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.product-link {
+  color: black;
+}
+
+.city-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #000;
+  display: none;
+}
+
+.city-dropdown ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.city-dropdown li {
+  margin-bottom: 10px;
+}
+
+.city-dropdown a {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.video-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 1;
+}
+
+.logo {
+  font-family: "Gothic", sans-serif; /* Замените "Gothic" на ваш выбранный готический шрифт */
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 85px;
+  white-space: nowrap;
+  
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+.deviz
+{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+
+.fish {
+  font-family: "Gothic", sans-serif;
+  font-size: 24px;
+  color: #fff;
+  white-space: nowrap;
+  margin: 50;
+}
+.fish1 {
+  font-family: "Gothic", sans-serif;
+  font-size: 24px;
+  color: #fff;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+.fish2 {
+  font-family: "Gothic", sans-serif;
+  font-size: 24px;
+  color: #fff;
+  white-space: nowrap;
+  margin: 50;
+}
+
+.video-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Измените прозрачность здесь (от 0 до 1) */
+  z-index: 1; /* Установите значение z-index выше, чем у видео */
+}
+
+.second-block {
+  background-color: #000;
+  display: flex;
+  justify-content: center; /* Изменил значение на "center" */
+  padding: 10px;
+  
+}
+
+.image-container {
+  position: relative;
+  flex: 1;
+  z-index: 1;
+  
+  margin-bottom: 300px;
+  margin: 0 60px; /* Увеличил значение отступов */
+  text-align: center;
+}
+
+.odeahda
+{
+  padding: 10px;
+  
+  margin-right: 10px;
+  margin-top:  100px;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.image-container img {
+  border: 1px solid rgb(255, 255, 255);
+  max-width: 100%;
+  height: auto;
+  transform: scale(0.90); /* Увеличил значение масштаба */
+}
+
+.text-overlay {
+  font-family: "Gothic", sans-serif;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -10px;
+  right: -10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .text-overlay {
+  opacity: 1;
+}
+
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorite-icon,
+.cart-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: #eee;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 0;
+}
+
+.favorite-icon:hover,
+.cart-icon:hover {
+  background-color: #ccc;
+}
+
+.fa-heart,
+.fa-shopping-cart {
+  color: #333;
+  font-size: 14px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.footer-block {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 40px;
+}
+
+.footer-heading {
+  font-weight: bold;
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.footer-menu li {
+  font-family: "Gothic", sans-serif;
+  margin-bottom: 15px;
+}
+
+.footer-menu a {
+  font-family: "Gothic", sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-menu a:hover {
+  text-decoration: underline;
+}
+
+.footer-info {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between; /* Добавил выравнивание по горизонтали */
+  align-items: center; /* Добавил выравнивание по вертикали */
+}
+
+.footer-info .contacts {
+  font-family: "Gothic", sans-serif;
+  margin-top: 10px;
+  order: 1; /* Изменил порядок элемента */
+}
+
+.footer-info .contacts:before {
+  font-family: "Gothic", sans-serif;
+  content: "Контакты: ";
+}
+
+.footer-info .contacts span {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-info .copyright {
+  font-family: "Gothic", sans-serif;
+  margin-bottom: 10px;
+  order: 2; /* Изменил порядок элемента */
+}
+
+
+.divots {
+  height: 50px;
+  background-color: #ffffff;
+}
+
+.containerblock {
+  background-color: #f7f7f7;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.block {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+h2 {
+  font-family: "Gothic", sans-serif;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: "Gothic", sans-serif;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-weight: normal;
+}
+
+.iconimg {
+  margin: 45px;
+  width: 120px;
+  height: 120px;
+}
+
+input[type="email"] {
+
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+input[type="password"] {
+ 
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+.clothing {
+  text-align: center;
+}
+
+.novinka {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px; 
+}
+
+.h2nov {
+  font-size: 85px;
+  text-transform: uppercase;
+  margin-right: -50px;
+  margin-bottom: 350px;
+  z-index: 1;
+}
+
+.obvodka
+{
+  border: 1px solid #000; /* Добавление обводки */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-container1 {
+  background-image: url("/media/img/blocks/новинка.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  z-index: 0; /* Change z-index value to place the image below the heading */
+  margin-right: -10px;
+  margin-bottom: 250px;
+  position: relative; /* Change position to relative */
+  opacity: 0.5; /* Set opacity to make the image transparent */
+}
+
+
+.container3 {
+ 
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px; /* Добавьте нужные отступы по бокам */
+}
+
+.sotr{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 200px; /* Добавьте нужные отступы по бокам */
+}
+
+
+.sotricon{
+  width: 200px;
+  height: 200px;
+}
+
+
+
+
+
+
+
+
+.h2cath {
+  font-size: 65px;
+  text-transform: uppercase;
+
+  z-index: 1;
+}
+
+.h2map {
+  font-size: 55px;
+  text-transform: uppercase;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+.obvodkamap
+{
+  margin: 20px;
+  border: 1px solid rgb(255, 255, 255); /* Добавление обводки */
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.maptext {
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+}
+
+.mappod {
+  flex-direction: column;
+  font-family: "Gothic", sans-serif;
+}
+
+.h2clothing {
+   font-size: 65px;
+  text-transform: uppercase;
+  margin-right: -400px;
+  margin-bottom: 550px;
+  z-index: 0;
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.map {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   
+  background-color: black;
+  color: white;
+}
+
+
+
+.h2logo {
+  font-size: 45px;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 1;
+}
+
+.left1{
+  font-size: 65px;
+  text-transform: uppercase;  
+margin-right: 50px;
+font-family: "Gothic", sans-serif;
+}
+.leftmal{
+  font-size: 25px;
+  text-transform: uppercase;  
+margin-right: 50px;
+font-family: "Gothic", sans-serif;
+}
+
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+  
+}
+.but1 
+{
+  display: flex;
+            justify-content: flex-start; /* Выравнивание по левому краю */
+            align-items: center;
+           
+}
+
+.but12
+{
+width: 400px;
+margin: 0 auto;
+padding: 20px;
+border: 1px solid #000000;
+border-radius: 5px;
+}
+
+
+
+
+
+.vertical{
+  display: flex;
+  justify-content: space-between; /* Добавил выравнивание по горизонтали */
+  align-items: center; /* Добавил выравнивание по вертикали */
+}
+
+input {
+  border: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #000;
+  background-color: #fff;
+  outline: none;
+}
+
+.inputsechr {
+  border: none;
+  margin-bottom: -35px;
+  margin-left: 100px;
+  padding: 0;
+  border: 1px solid #000;
+  background-color: #fff;
+  outline: none;
+  width: 500px; /* Set the desired width */
+  height: 40px; /* Set the desired height */
+}
+
+
+.inputlog {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  background-color: #fff;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+
+
+.inputlogpass {
+  border: none;
+  margin: 15px;
+  padding: 0;
+  border: 1px solid #000;
+  background-color: #fff;
+  outline: none;
+  width: 340px; /* Set the desired width */
+  height: 40px; /* Set the desired height */
+}
+
+
+.profile-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+.profile-icon {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.profile-name {
+  font-weight: bold;
+}
+
+
+.loginform{
+  text-align: center;
+
+  align-items: center;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+ 
+}
+.news {
+  margin-bottom: 30px;
+  border: 1px solid #000000;
+  padding: 20px;
+}
+
+.news .title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.news .date {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.news .content {
+  line-height: 1.5;
+}
+
+.company-info {
+  margin-bottom: 30px;
+  border: 1px solid #000000;
+  padding: 20px;
+}
+
+.company-info h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.company-info p {
+  line-height: 1.5;
+}
